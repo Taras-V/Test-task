@@ -1,0 +1,18 @@
+.header {
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  &__logo {
+    height: 4.375rem;
+  }
+
+  &__contacts {
+    width: 5.9375rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

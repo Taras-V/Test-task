@@ -1,0 +1,37 @@
+<section class="recognize">
+  <h2 class="recognize__title">Recognize</h2>
+  <h5 class="recognize__subtitle">I would like recognize the following group</h5>
+  <div class="recognize__container">
+    @for (name of arrOfNames; track $index) {
+    <div class="recognize__item">
+      <p class="recognize__item-name">{{name}}</p>
+      <button class="recognize__remove" (click)="removeItem($index)">
+        <img class="recognize__remove-icon" src="/assets/icon/remove.svg" alt="remove">
+      </button>
+    </div>
+    }
+  </div>
+
+  <button class="recognize__add" (click)="addUser()">Add User</button>
+  <p class="recognize__description">Lorem ipsum <span class="recognize__description_gold">dolor si </span> amet
+    consectetur <span class="recognize__description_gold">adipisicing elit.</span></p>
+
+  <div class="recognize__forms">
+    <div class="recognize__wrap">
+      <p class="recognize__label">Criteria</p>
+      <select class="recognize__select" name="first-fill" id="">
+        <option value="Technical Excellence">Technical Excellence</option>
+        <option value="New Excellence">New Excellence</option>
+        <option value="Last Excellence">Last Excellence</option>
+      </select>
+    </div>
+    <div class="recognize__wrap">
+      <p class="recognize__label">Point</p>
+      <select class="recognize__select" name="first-fill" id="">
+        <option value="50">50</option>
+        <option value="30">30</option>
+        <option value="11">11</option>
+      </select>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+.navigation {
+  margin-top: 2.5rem;
+
+  &__group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    font-weight: 500;
+    color: var(--secondary-title-color);
+    transition: 0.3s;
+
+    &:hover {
+      color: var(--mat-primary-bg-color);
+      transition: 0.3s;
+    }
+  }
+
+  .active-link {
+    font-weight: bold;
+    color: var(--mat-primary-bg-color);
+  }
+}

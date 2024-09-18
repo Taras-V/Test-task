@@ -1,0 +1,30 @@
+.send {
+
+  margin: 1.875rem 0 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__wrap {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  &__input {
+    width: 75%;
+    height: 1.75rem;
+    border: 0.125rem solid var(--primary-color);
+  }
+
+  &__copy,
+  &__review {
+    font-size: 1.125rem;
+    color: var(--secondary-color);
+    padding: 0.3125rem 0.625rem;
+    cursor: pointer;
+    background-color: var(--mat-primary-bg-color);
+    border: none;
+  }
+}
